@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gohul S — Full-Stack Web Developer Portfolio</title>
+    <meta name="description"
+        content="Gohul S — Full-Stack Web Developer skilled in React, Next.js, Node.js, Tailwind CSS, and MongoDB. B.E. Computer Science student open to web dev internship opportunities.">
+    <meta name="keywords"
+        content="Gohul S, Web Developer, Full-Stack Developer, Portfolio, React, Next.js, Tailwind CSS, Node.js, MongoDB, JavaScript">
+    <meta name="author" content="Gohul S">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>GS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Open to Internship Opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-greeting">Hi, I'm</span>
+                    <span class="title-name">Gohul S</span>
+                    <span class="title-role" id="typedRole"></span>
+                    <span class="typing-cursor">|</span>
+                </h1>
+                <p class="hero-description">
+                    Full-Stack Web Developer & B.E. Computer Science student with a passion for building
+                    <span class="highlight">responsive web applications</span> using
+                    <span class="highlight">React</span>,
+                    <span class="highlight">Next.js</span>, and
+                    <span class="highlight">Node.js</span>.
+                    Focused on creating modern, performant, and user-friendly digital experiences.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/gohul4151/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/gohul_s/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gohul-s/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:gohul4151@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-ring ring-2"></div>
+                    <img src="https://avatars.githubusercontent.com/u/168897876?v=4" alt="Gohul S" class="hero-image">
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fab fa-react"></i>
+                    <span>Next.js</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-wind"></i>
+                    <span>Tailwind</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>3rd-year B.E. Computer Science Engineering</strong> student at
+                        <strong>KPR Institute of Engineering and Technology</strong>, Coimbatore.
+                        With a CGPA of <strong>7.82</strong>, I combine academic excellence with
+                        hands-on project experience.
+                    </p>
+                    <p>
+                        My journey spans from building <strong>responsive web applications</strong>
+                        using React, Node.js, and MongoDB, to developing <strong>computer vision systems</strong>
+                        with OpenCV and Python. I'm also deeply interested in <strong>DevOps</strong>,
+                        <strong>ROS 2</strong>, and <strong>AI/ML</strong>.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me participating in hackathons,
+                        solving DSA problems on LeetCode, or contributing to my college's
+                        technical club projects.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">GitHub Repos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+            <!-- LeetCode Highlight -->
+            <div class="leetcode-highlight">
+                <a href="https://leetcode.com/u/gohul_s/" target="_blank" rel="noopener noreferrer"
+                    class="leetcode-card">
+                    <div class="leetcode-card-left">
+                        <div class="leetcode-icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="leetcode-info">
+                            <h3>LeetCode Profile</h3>
+                            <p>Active problem solver — Practicing DSA, algorithms, and competitive programming
+                                challenges regularly.</p>
+                        </div>
+                    </div>
+                    <div class="leetcode-card-right">
+                        <span class="leetcode-username">@gohul_s</span>
+                        <span class="leetcode-cta">View Profile <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fas fa-c"></i> C
+                        </span>
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fas fa-c"></i> C++
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fab fa-java"></i> Java
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fab fa-html5"></i> HTML
+                        </span>
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fab fa-css3-alt"></i> CSS
+                        </span>
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fab fa-react"></i> React
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fab fa-react"></i> Next.js
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fas fa-wind"></i> Tailwind CSS
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fab fa-node-js"></i> Node.js
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fas fa-server"></i> Express
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fas fa-database"></i> MongoDB
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Other Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fas fa-list-ol"></i> DSA
+                        </span>
+                        <span class="skill-tag" data-level="advanced">
+                            <i class="fas fa-eye"></i> Computer Vision
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fas fa-infinity"></i> DevOps
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fas fa-robot"></i> ROS 2
+                        </span>
+                        <span class="skill-tag" data-level="intermediate">
+                            <i class="fab fa-git-alt"></i> Git
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Tweets Web App -->
+                <div class="project-card featured">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gohul4151/tweets_web_app" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://tweets-web-app.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Live Demo" class="project-link-icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Tweets Web App</h3>
+                    <p class="project-subtitle">Real-time Social Media Platform</p>
+                    <p class="project-description">
+                        Full-stack social media platform enabling real-time user interaction and content sharing.
+                        Features posting, replying, profile customization, and media management via Cloudinary.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Cloudinary</span>
+                    </div>
+                    <span class="project-badge">Featured</span>
+                </div>
+
+                <!-- Project 2: Pokémon Card Generator -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gohul4151/Pokemon-card-generator" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://pokemon-card-generator-chi.vercel.app" target="_blank"
+                                rel="noopener noreferrer" aria-label="Live Demo" class="project-link-icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Pokémon Card Generator</h3>
+                    <p class="project-subtitle">Interactive DOM Manipulation App</p>
+                    <p class="project-description">
+                        Dynamic Pokémon card generator using DOM manipulation and the PokéAPI.
+                        Features animated card generation with responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PokéAPI</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: VS Code Clone -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gohul4151/vs_clone" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://vs-clone-two.vercel.app" target="_blank" rel="noopener noreferrer"
+                                aria-label="Live Demo" class="project-link-icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">VS Code Landing Page Clone</h3>
+                    <p class="project-subtitle">Responsive Web Application</p>
+                    <p class="project-description">
+                        Pixel-perfect clone of the VS Code landing page with responsive design,
+                        clean layout and modern web development practices.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: ROS2 & Computer Vision -->
+                <div class="project-card featured ros2-featured">
+                    <div class="project-card-header">
+                        <div class="project-icon ros2-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link-icon" title="Technical Club Project">
+                                <i class="fas fa-users"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ROS 2 & Computer Vision Projects</h3>
+                    <p class="project-subtitle">Robotics & Autonomous Systems</p>
+                    <p class="project-description">
+                        Active member of the college technical club, working on ROS 2 based robotics projects
+                        with integrated computer vision. Includes ArUco marker detection, real-time plant panel
+                        detection with PID control, and autonomous navigation systems.
+                    </p>
+                    <div class="project-tech">
+                        <span>ROS 2</span>
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>ArUco</span>
+                        <span>PID Control</span>
+                        <span>Computer Vision</span>
+                    </div>
+                    <span class="project-badge ros2-badge">Highlighted</span>
+                </div>
+
+                <!-- Project 5: Automated Attendance System -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gohul4151/attendance-management-system" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Automated Attendance System</h3>
+                    <p class="project-subtitle">Computer Vision based Tracker</p>
+                    <p class="project-description">
+                        Real-time face detection using Haar cascades and LBPH algorithm.
+                        Integrated GUI for attendance logging with CSV automation using Tkinter.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Haar Cascades</span>
+                        <span>LBPH</span>
+                        <span>Tkinter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Python Developer Intern</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt"></i> Nov 2024
+                            </span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> Cognitzy Technology — Coimbatore
+                        </h4>
+                        <ul class="timeline-details">
+                            <li>Developed Python scripts and automation tools as part of the software development team.
+                            </li>
+                            <li>Collaborated with team members on real-world projects and gained practical experience.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="section" id="education">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>B.E. in Computer Science & Engineering</h3>
+                        <h4>KPR Institute of Engineering and Technology</h4>
+                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</p>
+                        <div class="education-meta">
+                            <span class="education-date"><i class="far fa-calendar-alt"></i> 2023 – Present</span>
+                            <span class="education-grade"><i class="fas fa-star"></i> CGPA: 7.82</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>12th Grade</h3>
+                        <h4>Royal International School</h4>
+                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Palakapalayam, Tamil Nadu
+                        </p>
+                        <div class="education-meta">
+                            <span class="education-date"><i class="far fa-calendar-alt"></i> 2022 – 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Certifications Inline -->
+            <div class="certs-inline">
+                <div class="certs-inline-header">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certifications</h3>
+                </div>
+                <div class="certs-inline-list">
+                    <div class="cert-inline-item cert-highlight">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <strong>OpenCV Bootcamp</strong>
+                            <span>Certificate of Excellence — Grade: 100%</span>
+                        </div>
+                    </div>
+                    <div class="cert-inline-item">
+                        <i class="fas fa-network-wired"></i>
+                        <div>
+                            <strong>Cisco Packet Tracer</strong>
+                            <span>Cisco Networking Academy</span>
+                        </div>
+                    </div>
+                    <div class="cert-inline-item">
+                        <i class="fas fa-wifi"></i>
+                        <div>
+                            <strong>Network Essentials</strong>
+                            <span>Cisco Networking Academy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm currently looking for internship opportunities. If you have an interesting
+                    project or opportunity, feel free to reach out!
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:gohul4151@gmail.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>gohul4151@gmail.com</p>
+                    </a>
+                    <a href="tel:+919384921468" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+91 93849 21468</p>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Location</h3>
+                        <p>Komarapalayam, Tamil Nadu</p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://github.com/gohul4151/" target="_blank" rel="noopener noreferrer"
+                        class="contact-social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/gohul_s/" target="_blank" rel="noopener noreferrer"
+                        class="contact-social-link">
+                        <i class="fas fa-code"></i>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gohul-s/" target="_blank" rel="noopener noreferrer"
+                        class="contact-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>GS<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by <strong>Gohul S</strong></p>
+                <p class="footer-copyright">&copy; 2026 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
