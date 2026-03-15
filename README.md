@@ -2,7 +2,7 @@
 
 A personal portfolio website built with vanilla HTML, CSS, and JavaScript. Features a dark-themed design with animated particles, smooth scroll interactions, and responsive layout.
 
-**Live:** [tweets-web-app.vercel.app](https://tweets-web-app.vercel.app/) *(deploy your portfolio URL here)*
+**Live:** [portfolio-blond-five-94.vercel.app](https://portfolio-blond-five-94.vercel.app/)
 
 ---
 
@@ -30,14 +30,6 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript. Featu
 | Certifications | OpenCV Bootcamp (100%), Cisco Packet Tracer, Network Essentials |
 | Contact | Email, phone, location, social links |
 
-## Tech Stack
-
-- **HTML5** — semantic markup, SEO meta tags
-- **CSS3** — custom properties (design tokens), glassmorphism, CSS animations
-- **JavaScript (ES6+)** — Intersection Observer, Canvas API, requestAnimationFrame
-- **Fonts** — Inter (UI), Fira Code (mono) via Google Fonts
-- **Icons** — Font Awesome 6
-
 ## Project Structure
 
 ```
@@ -46,18 +38,6 @@ Portfolio/
 ├── index.css         # Styles and design system
 ├── script.js         # Animations and interactivity
 └── resume_gohul.pdf  # Downloadable resume
-```
-
-## Getting Started
-
-No build step required — open `index.html` directly in a browser or serve with any static file server:
-
-```bash
-# Using Python
-python -m http.server 3000
-
-# Using Node.js (npx)
-npx serve .
 ```
 
 ## Contact
